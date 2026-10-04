@@ -1,0 +1,7 @@
+venv/
+clean_sales.parquet
+Sales.csv
+dashboard_exports
+__pycache__
+sad
+retail_sales_analysis_report.md

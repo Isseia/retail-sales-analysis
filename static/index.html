@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Retail Sales Analytics Dashboard powered by PySpark and FastAPI">
+    <title>Sales Analytics Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.js"></script>
+    <script src="/static/dashboard.js" defer></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="brand">SALES<span>ANALYTICS</span></div>
+        <nav class="nav" role="navigation" aria-label="Dashboard sections">
+            <a href="#overview" class="active">
+                <i data-lucide="layout-dashboard"></i>
+                <span>Overview</span>
+            </a>
+            <a href="#sales">
+                <i data-lucide="chart-column"></i>
+                <span>Sales</span>
+            </a>
+            <a href="#customers">
+                <i data-lucide="users"></i>
+                <span>Customers</span>
+            </a>
+            <a href="#products">
+                <i data-lucide="package"></i>
+                <span>Products</span>
+            </a>
+            <a href="#operations">
+                <i data-lucide="truck"></i>
+                <span>Operations</span>
+            </a>
+        </nav>
+
+        <a class="sidebar-link" href="https://github.com/Isseia" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub profile" title="View my GitHub profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+            <span>Check my GitHub</span>
+        </a>
+
+    </div>
+
+    <main class="main">
+        <header class="header">
+            <div>
+                <p class="eyebrow">PYSPARK ANALYTICS</p>
+                <h1>Enterprise Sales & Margin Performance</h1>
+            </div>
+            <div class="status"><span></span> Live API</div>
+        </header>
+
+        <div class="filters" id="filterBar" hidden>
+            <div class="filter-group">
+                <label for="fltFrom">From</label>
+                <select id="fltFrom"></select>
+                <label for="fltTo">To</label>
+                <select id="fltTo"></select>
+            </div>
+            <div class="filter-group presets" id="presetGroup" role="group" aria-label="Quick date ranges">
+                <button type="button" data-months="3">3M</button>
+                <button type="button" data-months="6">6M</button>
+                <button type="button" data-months="12">12M</button>
+                <button type="button" data-months="all">All</button>
+            </div>
+            <div class="filter-group">
+                <label for="fltCategory">Category</label>
+                <select id="fltCategory"></select>
+                <label for="fltChannel">Channel</label>
+                <select id="fltChannel"></select>
+            </div>
+            <div class="filter-group chips" id="filterChips"></div>
+            <button type="button" class="reset-btn" id="fltReset" hidden>Reset filters</button>
+        </div>
+
+        <section id="overview" class="section">
+            <div class="section-title">
+                <div>
+                    <h2>Executive Performance Summary</h2>
+                    <p class="subtitle">YTD financial health, operational metrics, and revenue trajectories.</p>
+                </div>
+                <span id="recordStatus" class="record-badge">Loading data…</span>
+            </div>
+
+            <div class="kpi-grid">
+                <!-- Revenue -->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">Total Revenue</span>
+                        <i data-lucide="dollar-sign"></i>
+                    </div>
+                    <div class="kpi-value" id="kpi-revenue">—</div>
+                    <div class="kpi-trend">
+                        <span id="revenue-trend">—</span>
+                        <span class="trend-label period-label">vs last month</span>
+                    </div>
+                    <div class="kpi-sparkline" id="revenue-sparkline"></div>
+                </div>
+
+                <!-- Profit -->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">Total Profit</span>
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <div class="kpi-value" id="kpi-profit">—</div>
+                    <div class="kpi-trend">
+                        <span id="profit-trend">—</span>
+                        <span class="trend-label period-label">vs last month</span>
+                    </div>
+                    <div class="kpi-sparkline" id="profit-sparkline"></div>
+                </div>
+
+                <!-- Orders -->
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">Total Orders</span>
+                        <i data-lucide="shopping-cart"></i>
+                    </div>
+                    <div class="kpi-value" id="kpi-orders">—</div>
+                    <div class="kpi-trend">
+                        <span id="orders-trend">—</span>
+                        <span class="trend-label period-label">vs last month</span>
+                    </div>
+                    <div class="kpi-sparkline" id="orders-sparkline"></div>
+                </div>
+
+                <div class="kpi-card">
+                    <div class="kpi-header">
+                        <span class="kpi-title">Unique Customers</span>
+                        <i data-lucide="users"></i>
+                    </div>
+                    <div class="kpi-value" id="kpi-customers">—</div>
+                    <div class="kpi-trend">
+                        <span id="customers-trend">—</span>
+                        <span class="trend-label period-label">vs last month</span>
+                    </div>
+                    <div class="kpi-sparkline" id="customers-sparkline"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sales" class="section">
+            <div class="section-title">
+                <h2>Sales &amp; Profitability</h2>
+            </div>
+            <!-- Trend chart spans full width -->
+            <div class="card" style="margin-bottom: 16px;">
+                <h3>Historical Revenue vs. Profit Margin Growth</h3>
+                <div id="trend" class="chart"></div>
+            </div>
+            <div class="chart-grid two">
+                <div class="card">
+                    <h3>Revenue Contribution by Product Category <span class="hint">💡 Select data points across charts
+                            to filter the
+                            view.</span></h3>
+                    <div id="categories" class="chart"></div>
+                </div>
+                <div class="card">
+                    <h3>Sales Channel Volume Share <span class="hint">💡 Select data points across charts to filter the
+                            view.</span></h3>
+                    <div id="channels" class="chart"></div>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 16px;">
+                <h3>Top 10 Geographic Regions by Revenue</h3>
+                <div id="regions" class="chart"></div>
+            </div>
+        </section>
+
+        <section id="customers" class="section">
+            <div class="section-title">
+                <h2>Customer Demographics & Segment Insights</h2>
+            </div>
+            <div class="chart-grid two">
+                <div class="card">
+                    <h3>Revenue Distribution by Target Segment</h3>
+                    <div id="segments" class="chart"></div>
+                </div>
+                <div class="card">
+                    <h3>Preferred Customer Payment Methods</h3>
+                    <div id="payments" class="chart"></div>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 16px;">
+                <h3>Demographic Revenue Split (Age & Gender)</h3>
+                <div id="demographics" class="chart tall"></div>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <div class="section-title">
+                <h2>Product Performance & Inventory Health</h2>
+            </div>
+            <div class="card">
+                <div class="table-wrap">
+                    <table id="productsTable">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Revenue</th>
+                                <th>Profit</th>
+                                <th>Units</th>
+                                <th>Rating</th>
+                                <th>Margin</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productTable"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="operations" class="section">
+            <div class="section-title">
+                <h2>Fulfillment Operations & Reverse Logistics</h2>
+            </div>
+            <div class="chart-grid three">
+                <div class="card">
+                    <h3>Primary Drivers of Product Returns</h3>
+                    <div id="returnReasons" class="chart"></div>
+                </div>
+                <div class="card">
+                    <h3>Fulfillment Volume by Order Tier</h3>
+                    <div id="deliverySpeed" class="chart"></div>
+                </div>
+                <div class="card">
+                    <h3>Average Delivery Cycle by Shipping Class</h3>
+                    <div id="shipping" class="chart"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Built with PySpark &bull; FastAPI &bull; Plotly.js &bull; HTML / CSS / JavaScript</p>
+        </footer>
+    </main>
+</body>
+
+</html>
