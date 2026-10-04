@@ -1,6 +1,5 @@
 venv/ 
-Sales.csv
-dashboard_exports
+Sales.csv 
 __pycache__
 sad
 retail_sales_analysis_report.md
