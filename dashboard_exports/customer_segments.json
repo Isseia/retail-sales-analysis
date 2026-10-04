@@ -1,0 +1,56 @@
+[
+  {
+    "Customer_Segment": "Consumer",
+    "customer_count": 2575,
+    "orders_count": 7283,
+    "revenue": 3666739.39,
+    "profit": 737660.17,
+    "profit_margin_pct": 20.12,
+    "aov": 503.47
+  },
+  {
+    "Customer_Segment": "Small Business",
+    "customer_count": 1047,
+    "orders_count": 3055,
+    "revenue": 1421953.05,
+    "profit": 287598.58,
+    "profit_margin_pct": 20.23,
+    "aov": 465.45
+  },
+  {
+    "Customer_Segment": "Returning Customer",
+    "customer_count": 1823,
+    "orders_count": 2383,
+    "revenue": 1115273.9,
+    "profit": 224109.25,
+    "profit_margin_pct": 20.09,
+    "aov": 468.01
+  },
+  {
+    "Customer_Segment": "Corporate",
+    "customer_count": 677,
+    "orders_count": 2039,
+    "revenue": 942132.17,
+    "profit": 175673.11,
+    "profit_margin_pct": 18.65,
+    "aov": 462.06
+  },
+  {
+    "Customer_Segment": "New Customer",
+    "customer_count": 1214,
+    "orders_count": 1417,
+    "revenue": 708173.63,
+    "profit": 141279.15,
+    "profit_margin_pct": 19.95,
+    "aov": 499.77
+  },
+  {
+    "Customer_Segment": "Premium",
+    "customer_count": 260,
+    "orders_count": 792,
+    "revenue": 379818.46,
+    "profit": 79119.14,
+    "profit_margin_pct": 20.83,
+    "aov": 479.57
+  }
+]

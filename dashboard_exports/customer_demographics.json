@@ -1,0 +1,114 @@
+[
+  {
+    "Age_Group": "25-34",
+    "Customer_Gender": "Female",
+    "customer_count": 591,
+    "revenue": 977732.41,
+    "avg_rating": 4.0
+  },
+  {
+    "Age_Group": "25-34",
+    "Customer_Gender": "Male",
+    "customer_count": 585,
+    "revenue": 1051718.57,
+    "avg_rating": 4.0
+  },
+  {
+    "Age_Group": "25-34",
+    "Customer_Gender": "Non-binary",
+    "customer_count": 38,
+    "revenue": 46188.98,
+    "avg_rating": 3.95
+  },
+  {
+    "Age_Group": "25-34",
+    "Customer_Gender": "Unspecified",
+    "customer_count": 47,
+    "revenue": 15882.28,
+    "avg_rating": 4.09
+  },
+  {
+    "Age_Group": "35-49",
+    "Customer_Gender": "Female",
+    "customer_count": 1263,
+    "revenue": 1994491.79,
+    "avg_rating": 3.98
+  },
+  {
+    "Age_Group": "35-49",
+    "Customer_Gender": "Male",
+    "customer_count": 1160,
+    "revenue": 1914767.8,
+    "avg_rating": 3.97
+  },
+  {
+    "Age_Group": "35-49",
+    "Customer_Gender": "Non-binary",
+    "customer_count": 74,
+    "revenue": 109533.37,
+    "avg_rating": 4.05
+  },
+  {
+    "Age_Group": "35-49",
+    "Customer_Gender": "Unspecified",
+    "customer_count": 80,
+    "revenue": 33039.76,
+    "avg_rating": 3.84
+  },
+  {
+    "Age_Group": "50+",
+    "Customer_Gender": "Female",
+    "customer_count": 397,
+    "revenue": 667201.21,
+    "avg_rating": 4.01
+  },
+  {
+    "Age_Group": "50+",
+    "Customer_Gender": "Male",
+    "customer_count": 396,
+    "revenue": 624909.48,
+    "avg_rating": 4.02
+  },
+  {
+    "Age_Group": "50+",
+    "Customer_Gender": "Non-binary",
+    "customer_count": 26,
+    "revenue": 39281.13,
+    "avg_rating": 4.05
+  },
+  {
+    "Age_Group": "50+",
+    "Customer_Gender": "Unspecified",
+    "customer_count": 19,
+    "revenue": 6398.0,
+    "avg_rating": 4.05
+  },
+  {
+    "Age_Group": "<25",
+    "Customer_Gender": "Female",
+    "customer_count": 217,
+    "revenue": 352669.02,
+    "avg_rating": 3.97
+  },
+  {
+    "Age_Group": "<25",
+    "Customer_Gender": "Male",
+    "customer_count": 207,
+    "revenue": 365928.01,
+    "avg_rating": 3.99
+  },
+  {
+    "Age_Group": "<25",
+    "Customer_Gender": "Non-binary",
+    "customer_count": 21,
+    "revenue": 30075.46,
+    "avg_rating": 3.89
+  },
+  {
+    "Age_Group": "<25",
+    "Customer_Gender": "Unspecified",
+    "customer_count": 15,
+    "revenue": 4273.33,
+    "avg_rating": 4.0
+  }
+]

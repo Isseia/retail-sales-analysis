@@ -1,0 +1,164 @@
+[
+  {
+    "Product_Category": "Appliances",
+    "Product_Subcategory": "Home Office",
+    "revenue": 237303.16,
+    "profit": 51332.04,
+    "units_sold": 785,
+    "avg_unit_price": 319.12,
+    "profit_margin_pct": 21.63
+  },
+  {
+    "Product_Category": "Appliances",
+    "Product_Subcategory": "Climate",
+    "revenue": 177492.9,
+    "profit": 44915.85,
+    "units_sold": 2315,
+    "avg_unit_price": 82.44,
+    "profit_margin_pct": 25.31
+  },
+  {
+    "Product_Category": "Appliances",
+    "Product_Subcategory": "Kitchen",
+    "revenue": 169293.42,
+    "profit": 32337.44,
+    "units_sold": 785,
+    "avg_unit_price": 229.79,
+    "profit_margin_pct": 19.1
+  },
+  {
+    "Product_Category": "Electronics",
+    "Product_Subcategory": "Laptops",
+    "revenue": 2737572.76,
+    "profit": 487909.97,
+    "units_sold": 2758,
+    "avg_unit_price": 1060.71,
+    "profit_margin_pct": 17.82
+  },
+  {
+    "Product_Category": "Electronics",
+    "Product_Subcategory": "Tablets",
+    "revenue": 680055.12,
+    "profit": 100912.71,
+    "units_sold": 1449,
+    "avg_unit_price": 498.52,
+    "profit_margin_pct": 14.84
+  },
+  {
+    "Product_Category": "Electronics",
+    "Product_Subcategory": "Monitors",
+    "revenue": 462904.46,
+    "profit": 90882.91,
+    "units_sold": 1500,
+    "avg_unit_price": 328.99,
+    "profit_margin_pct": 19.63
+  },
+  {
+    "Product_Category": "Electronics",
+    "Product_Subcategory": "Accessories",
+    "revenue": 417269.3,
+    "profit": 121754.0,
+    "units_sold": 7192,
+    "avg_unit_price": 62.31,
+    "profit_margin_pct": 29.18
+  },
+  {
+    "Product_Category": "Electronics",
+    "Product_Subcategory": "Cameras",
+    "revenue": 269325.22,
+    "profit": 64466.04,
+    "units_sold": 2535,
+    "avg_unit_price": 113.38,
+    "profit_margin_pct": 23.94
+  },
+  {
+    "Product_Category": "Electronics",
+    "Product_Subcategory": "Audio",
+    "revenue": 213812.57,
+    "profit": 55769.01,
+    "units_sold": 1539,
+    "avg_unit_price": 148.74,
+    "profit_margin_pct": 26.08
+  },
+  {
+    "Product_Category": "Electronics",
+    "Product_Subcategory": "Storage",
+    "revenue": 141141.99,
+    "profit": 30416.28,
+    "units_sold": 1088,
+    "avg_unit_price": 139.14,
+    "profit_margin_pct": 21.55
+  },
+  {
+    "Product_Category": "Furniture",
+    "Product_Subcategory": "Office Furniture",
+    "revenue": 1672335.9,
+    "profit": 332615.51,
+    "units_sold": 3936,
+    "avg_unit_price": 452.52,
+    "profit_margin_pct": 19.89
+  },
+  {
+    "Product_Category": "Furniture",
+    "Product_Subcategory": "Storage",
+    "revenue": 223847.76,
+    "profit": 55780.46,
+    "units_sold": 965,
+    "avg_unit_price": 248.88,
+    "profit_margin_pct": 24.92
+  },
+  {
+    "Product_Category": "Furniture",
+    "Product_Subcategory": "Lighting",
+    "revenue": 89961.19,
+    "profit": 31619.05,
+    "units_sold": 1387,
+    "avg_unit_price": 69.06,
+    "profit_margin_pct": 35.15
+  },
+  {
+    "Product_Category": "Office Supplies",
+    "Product_Subcategory": "Printers",
+    "revenue": 256136.72,
+    "profit": 35880.23,
+    "units_sold": 970,
+    "avg_unit_price": 279.51,
+    "profit_margin_pct": 14.01
+  },
+  {
+    "Product_Category": "Office Supplies",
+    "Product_Subcategory": "Consumables",
+    "revenue": 199019.57,
+    "profit": 35074.17,
+    "units_sold": 1791,
+    "avg_unit_price": 118.88,
+    "profit_margin_pct": 17.62
+  },
+  {
+    "Product_Category": "Office Supplies",
+    "Product_Subcategory": "Paper",
+    "revenue": 142650.89,
+    "profit": 28742.27,
+    "units_sold": 4140,
+    "avg_unit_price": 36.85,
+    "profit_margin_pct": 20.15
+  },
+  {
+    "Product_Category": "Office Supplies",
+    "Product_Subcategory": "Presentation",
+    "revenue": 100548.25,
+    "profit": 28568.13,
+    "units_sold": 1210,
+    "avg_unit_price": 88.87,
+    "profit_margin_pct": 28.41
+  },
+  {
+    "Product_Category": "Office Supplies",
+    "Product_Subcategory": "Writing",
+    "revenue": 43419.42,
+    "profit": 16463.33,
+    "units_sold": 1932,
+    "avg_unit_price": 24.06,
+    "profit_margin_pct": 37.92
+  }
+]

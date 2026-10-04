@@ -1,0 +1,77 @@
+{
+  "return_reasons": [
+    {
+      "Return_Reason": "Late Delivery",
+      "return_count": 331,
+      "returned_value": 145309.89
+    },
+    {
+      "Return_Reason": "Wrong Item",
+      "return_count": 317,
+      "returned_value": 121065.41
+    },
+    {
+      "Return_Reason": "Damaged",
+      "return_count": 312,
+      "returned_value": 132387.58
+    },
+    {
+      "Return_Reason": "Other",
+      "return_count": 311,
+      "returned_value": 140189.48
+    },
+    {
+      "Return_Reason": "Defective",
+      "return_count": 302,
+      "returned_value": 135428.71
+    },
+    {
+      "Return_Reason": "Changed Mind",
+      "return_count": 300,
+      "returned_value": 153914.36
+    }
+  ],
+  "delivery_speed": [
+    {
+      "Delivery_Speed_Category": "Delayed",
+      "count": 3897,
+      "avg_days": 5.74
+    },
+    {
+      "Delivery_Speed_Category": "Standard",
+      "count": 4992,
+      "avg_days": 3.19
+    },
+    {
+      "Delivery_Speed_Category": "Next Day / Express",
+      "count": 9111,
+      "avg_days": 0.25
+    }
+  ],
+  "shipping_methods": [
+    {
+      "Shipping_Method": "Next Day",
+      "count": 949,
+      "avg_days": 1.37,
+      "revenue": 456663.71
+    },
+    {
+      "Shipping_Method": "Pickup",
+      "count": 6939,
+      "avg_days": 0.01,
+      "revenue": 2997592.73
+    },
+    {
+      "Shipping_Method": "Express",
+      "count": 2377,
+      "avg_days": 1.84,
+      "revenue": 1139896.55
+    },
+    {
+      "Shipping_Method": "Standard",
+      "count": 7735,
+      "avg_days": 4.5,
+      "revenue": 3639937.61
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "Sales_Channel": "Online",
+    "revenue": 3112092.21,
+    "profit": 629813.67,
+    "orders_count": 7444,
+    "avg_delivery_days": 2.95,
+    "profit_margin_pct": 20.24,
+    "pct_of_total_revenue": 37.8
+  },
+  {
+    "Sales_Channel": "Retail Store",
+    "revenue": 2449189.44,
+    "profit": 487427.54,
+    "orders_count": 5779,
+    "avg_delivery_days": 0.89,
+    "profit_margin_pct": 19.9,
+    "pct_of_total_revenue": 29.74
+  },
+  {
+    "Sales_Channel": "B2B Portal",
+    "revenue": 2121499.06,
+    "profit": 419770.48,
+    "orders_count": 2070,
+    "avg_delivery_days": 3.02,
+    "profit_margin_pct": 19.79,
+    "pct_of_total_revenue": 25.76
+  },
+  {
+    "Sales_Channel": "Phone Order",
+    "revenue": 551309.89,
+    "profit": 108427.71,
+    "orders_count": 1432,
+    "avg_delivery_days": 2.98,
+    "profit_margin_pct": 19.67,
+    "pct_of_total_revenue": 6.7
+  }
+]

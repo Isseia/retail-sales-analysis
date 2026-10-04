@@ -1,0 +1,112 @@
+[
+  {
+    "Country": "Australia",
+    "Region": "New South Wales",
+    "revenue": 512876.23,
+    "profit": 101048.71,
+    "orders_count": 1097,
+    "customers_count": 308,
+    "profit_margin_pct": 19.7,
+    "aov": 467.53
+  },
+  {
+    "Country": "Canada",
+    "Region": "Ontario",
+    "revenue": 682772.22,
+    "profit": 135187.48,
+    "orders_count": 1536,
+    "customers_count": 383,
+    "profit_margin_pct": 19.8,
+    "aov": 444.51
+  },
+  {
+    "Country": "Canada",
+    "Region": "British Columbia",
+    "revenue": 516737.93,
+    "profit": 105606.23,
+    "orders_count": 1103,
+    "customers_count": 305,
+    "profit_margin_pct": 20.44,
+    "aov": 468.48
+  },
+  {
+    "Country": "France",
+    "Region": "\u00cele-de-france",
+    "revenue": 725734.88,
+    "profit": 144662.55,
+    "orders_count": 1557,
+    "customers_count": 439,
+    "profit_margin_pct": 19.93,
+    "aov": 466.11
+  },
+  {
+    "Country": "Germany",
+    "Region": "Bavaria",
+    "revenue": 583796.46,
+    "profit": 113943.02,
+    "orders_count": 1211,
+    "customers_count": 335,
+    "profit_margin_pct": 19.52,
+    "aov": 482.08
+  },
+  {
+    "Country": "Germany",
+    "Region": "North Rhine-westphalia",
+    "revenue": 381395.54,
+    "profit": 75600.83,
+    "orders_count": 893,
+    "customers_count": 242,
+    "profit_margin_pct": 19.82,
+    "aov": 427.09
+  },
+  {
+    "Country": "United Kingdom",
+    "Region": "England",
+    "revenue": 1326891.54,
+    "profit": 269790.34,
+    "orders_count": 2870,
+    "customers_count": 783,
+    "profit_margin_pct": 20.33,
+    "aov": 462.33
+  },
+  {
+    "Country": "United States",
+    "Region": "Northeast",
+    "revenue": 1010755.5,
+    "profit": 201411.28,
+    "orders_count": 2119,
+    "customers_count": 606,
+    "profit_margin_pct": 19.93,
+    "aov": 477.0
+  },
+  {
+    "Country": "United States",
+    "Region": "West",
+    "revenue": 992310.33,
+    "profit": 200950.05,
+    "orders_count": 2077,
+    "customers_count": 589,
+    "profit_margin_pct": 20.25,
+    "aov": 477.76
+  },
+  {
+    "Country": "United States",
+    "Region": "South",
+    "revenue": 760346.85,
+    "profit": 154539.86,
+    "orders_count": 1624,
+    "customers_count": 456,
+    "profit_margin_pct": 20.32,
+    "aov": 468.19
+  },
+  {
+    "Country": "United States",
+    "Region": "Midwest",
+    "revenue": 740473.12,
+    "profit": 142699.05,
+    "orders_count": 1525,
+    "customers_count": 436,
+    "profit_margin_pct": 19.27,
+    "aov": 485.56
+  }
+]

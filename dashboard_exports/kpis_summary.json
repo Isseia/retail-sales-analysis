@@ -1,0 +1,17 @@
+{
+  "total_revenue": 8234090.6,
+  "total_profit": 1645439.4,
+  "total_cost": 6590388.19,
+  "total_orders": 14541,
+  "total_transactions": 18000,
+  "total_customers": 4882,
+  "total_units_sold": 38277,
+  "average_rating": 3.99,
+  "average_delivery_days": 2.25,
+  "return_rate_pct": 10.41,
+  "discount_frequency_pct": 57.59,
+  "profitable_orders_pct": 98.71,
+  "overall_profit_margin_pct": 19.98,
+  "average_order_value": 566.27,
+  "average_customer_spend": 1686.62
+}

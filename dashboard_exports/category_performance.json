@@ -1,0 +1,38 @@
+[
+  {
+    "Product_Category": "Electronics",
+    "revenue": 4922081.42,
+    "profit": 952110.92,
+    "units_sold": 18061,
+    "orders_count": 7432,
+    "return_rate_pct": 10.37,
+    "profit_margin_pct": 19.34
+  },
+  {
+    "Product_Category": "Furniture",
+    "revenue": 1986144.85,
+    "profit": 420015.02,
+    "units_sold": 6288,
+    "orders_count": 3165,
+    "return_rate_pct": 10.2,
+    "profit_margin_pct": 21.15
+  },
+  {
+    "Product_Category": "Office Supplies",
+    "revenue": 741774.85,
+    "profit": 144728.13,
+    "units_sold": 10043,
+    "orders_count": 4267,
+    "return_rate_pct": 9.92,
+    "profit_margin_pct": 19.51
+  },
+  {
+    "Product_Category": "Appliances",
+    "revenue": 584089.48,
+    "profit": 128585.33,
+    "units_sold": 3885,
+    "orders_count": 1936,
+    "return_rate_pct": 11.99,
+    "profit_margin_pct": 22.01
+  }
+]

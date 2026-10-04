@@ -1,0 +1,44 @@
+[
+  {
+    "Payment_Method": "Credit Card",
+    "transaction_count": 6804,
+    "revenue": 3251316.13,
+    "share_of_transactions_pct": 37.8
+  },
+  {
+    "Payment_Method": "Debit Card",
+    "transaction_count": 3954,
+    "revenue": 1738074.95,
+    "share_of_transactions_pct": 21.97
+  },
+  {
+    "Payment_Method": "PayPal",
+    "transaction_count": 2816,
+    "revenue": 1329415.75,
+    "share_of_transactions_pct": 15.64
+  },
+  {
+    "Payment_Method": "Bank Transfer",
+    "transaction_count": 2157,
+    "revenue": 932102.67,
+    "share_of_transactions_pct": 11.98
+  },
+  {
+    "Payment_Method": "Cash",
+    "transaction_count": 1038,
+    "revenue": 471008.39,
+    "share_of_transactions_pct": 5.77
+  },
+  {
+    "Payment_Method": "Apple Pay",
+    "transaction_count": 1087,
+    "revenue": 466580.38,
+    "share_of_transactions_pct": 6.04
+  },
+  {
+    "Payment_Method": "Other",
+    "transaction_count": 144,
+    "revenue": 45592.33,
+    "share_of_transactions_pct": 0.8
+  }
+]

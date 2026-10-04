@@ -1,0 +1,102 @@
+[
+  {
+    "Product_ID": "P001",
+    "Product_Name": "AeroBook 14 Laptop",
+    "Product_Category": "Electronics",
+    "revenue": 1382381.54,
+    "profit": 234632.0,
+    "units_sold": 1638,
+    "avg_rating": 4.03,
+    "profit_margin_pct": 16.97
+  },
+  {
+    "Product_ID": "P002",
+    "Product_Name": "ProBook 16 Laptop",
+    "Product_Category": "Electronics",
+    "revenue": 1346439.33,
+    "profit": 251757.02,
+    "units_sold": 1111,
+    "avg_rating": 4.02,
+    "profit_margin_pct": 18.7
+  },
+  {
+    "Product_ID": "P003",
+    "Product_Name": "EdgeTab 11 Tablet",
+    "Product_Category": "Electronics",
+    "revenue": 675690.83,
+    "profit": 100538.15,
+    "units_sold": 1439,
+    "avg_rating": 4.03,
+    "profit_margin_pct": 14.88
+  },
+  {
+    "Product_ID": "P010",
+    "Product_Name": "Standing Desk",
+    "Product_Category": "Furniture",
+    "revenue": 588721.39,
+    "profit": 118578.66,
+    "units_sold": 894,
+    "avg_rating": 3.95,
+    "profit_margin_pct": 20.14
+  },
+  {
+    "Product_ID": "P011",
+    "Product_Name": "Meeting Table",
+    "Product_Category": "Furniture",
+    "revenue": 530253.01,
+    "profit": 82509.73,
+    "units_sold": 623,
+    "avg_rating": 4.01,
+    "profit_margin_pct": 15.56
+  },
+  {
+    "Product_ID": "P004",
+    "Product_Name": "Vision 27 Monitor",
+    "Product_Category": "Electronics",
+    "revenue": 455769.38,
+    "profit": 89674.53,
+    "units_sold": 1476,
+    "avg_rating": 3.98,
+    "profit_margin_pct": 19.68
+  },
+  {
+    "Product_ID": "P009",
+    "Product_Name": "Office Chair Pro",
+    "Product_Category": "Furniture",
+    "revenue": 436645.44,
+    "profit": 95708.07,
+    "units_sold": 1041,
+    "avg_rating": 3.95,
+    "profit_margin_pct": 21.92
+  },
+  {
+    "Product_ID": "P015",
+    "Product_Name": "Printer Plus",
+    "Product_Category": "Office Supplies",
+    "revenue": 255368.19,
+    "profit": 35772.5,
+    "units_sold": 967,
+    "avg_rating": 3.98,
+    "profit_margin_pct": 14.01
+  },
+  {
+    "Product_ID": "P022",
+    "Product_Name": "Air Purifier",
+    "Product_Category": "Appliances",
+    "revenue": 236656.52,
+    "profit": 51163.35,
+    "units_sold": 783,
+    "avg_rating": 3.95,
+    "profit_margin_pct": 21.62
+  },
+  {
+    "Product_ID": "P014",
+    "Product_Name": "Filing Cabinet",
+    "Product_Category": "Furniture",
+    "revenue": 222637.74,
+    "profit": 55425.35,
+    "units_sold": 960,
+    "avg_rating": 4.04,
+    "profit_margin_pct": 24.89
+  }
+]
