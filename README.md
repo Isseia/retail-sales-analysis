@@ -4,6 +4,8 @@
 **Analysis Tool:** PySpark 4.2.0 on Apache Spark  
 **Report Date:** October 2026
 
+**Dashboard Analytics:** **[Live Demo](https://retail-sales-analysis-seven.vercel.app)**
+
 ---
 
 ## 1. Executive Summary
